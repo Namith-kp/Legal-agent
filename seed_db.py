@@ -1,0 +1,10 @@
+import sqlite3
+conn = sqlite3.connect('permissions.db')
+c = conn.cursor()
+c.execute("INSERT OR IGNORE INTO roles (id, name) VALUES ('r1', 'admin');")
+c.execute("INSERT OR IGNORE INTO permissions (id, name) VALUES ('p1', 'generate_legal_doc');")
+c.execute("INSERT OR IGNORE INTO role_permissions (role_id, permission_id) VALUES ('r1', 'p1');")
+c.execute("INSERT OR IGNORE INTO users (id, name, role_id) VALUES ('u1', 'test_user', 'r1');")
+conn.commit()
+conn.close()
+print("Seeded.")
