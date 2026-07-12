@@ -1,0 +1,79 @@
+# Dependency directories
+node_modules/
+/jspm_packages/
+/web_modules/
+
+# Python Cache and Build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints
+.eggs/
+/develop-eggs/
+/dist/
+/downloads/
+/eggs/
+/lib/
+/lib64/
+/parts/
+/sdist/
+/var/
+/build/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+/pip-wheel-metadata/
+
+# Environment variables & secrets (CRITICAL: Do not push to GitHub)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.pem
+*.key
+*.pfx
+*.cert
+credentials.json
+client_secret*.json
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs and editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local Databases and Vector Store
+data/chroma_db/
+*.db
+*.sqlite
+*.sqlite3
+
+# Local Output & Temp Directories
+output/
+temp/
+tmp/
+
+# Gemini / Antigravity AI configurations and logs
+.gemini/
