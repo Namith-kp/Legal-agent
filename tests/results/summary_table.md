@@ -9,5 +9,4 @@
 | `test_no_matching_law_refusal` | Verify query with no matching law in corpus is refused | ✅ PASS |
 | `test_rag_score_filtering` | Verify RAG filters out search hits below score floor (0.55) | ✅ PASS |
 | `test_max_retries_and_query_refinement` | Verify query refined and retried up to MAX_RETRIES (2) | ✅ PASS |
-| `test_browser_fallback_trigger` | Verify fallback search triggered when RAG fails | ✅ PASS |
 | `test_multiple_claims_grounded` | Verify multiple claims are drafted and grounded individually | ✅ PASS |
